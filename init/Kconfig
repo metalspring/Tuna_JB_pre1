@@ -999,6 +999,22 @@ config CC_OPTIMIZE_O3
 
 endchoice
 
+config CC_GRAPHITE_OPTIMIZATION
+	bool "Enable graphite optimizations"
+	help
+	  Enabling this option will turn on graphite optimizations.
+
+config CC_LINK_TIME_OPTIMIZATION
+	bool "Enable link-time optimization"
+	help
+	  Enabling this option will turn on link time optimization.
+
+config FFAST_MATH
+	bool "Use -ffast-math"
+	help
+	 Sets -fno-math-errno, -funsafe-math-optimizations, -ffinite-math-only, -fno-rounding-math,
+	 -fno-signaling-nans, -fno-trapping-math, -fno-signed-zeros, and -fcx-limited-range.
+
 config SYSCTL
 	bool
 
